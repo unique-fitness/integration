@@ -1,0 +1,45 @@
+@import "./variables_fonts";
+
+.activitie-content-section {
+    .desc {
+        max-width: 270px;
+    }
+}
+
+.coaching-personnel.background-section {
+    background-color: $main_color;
+}
+
+.nos-activites-section.coachs {
+    .instagram-icon {
+        filter: brightness(0) invert(1);;
+        position: absolute;
+        width: initial;
+        margin: auto;
+        bottom: 32px;
+        right: 0;
+        left: 0;
+    }
+   .card {
+       .title_div {
+            h1 {
+                font-size: 32px !important;
+                text-decoration: none;
+                line-height: 44px;
+            }
+            span {
+                font-size: 16px !important;
+                font-family: 'Avenir Next Regular';
+                line-height: 22px;
+            }
+        }
+        &:hover {
+            .instagram-icon {
+                filter: none;
+            }
+            .card-img-overlay {
+                background-color: #00000057;
+            }
+        }
+   }
+}
