@@ -6,6 +6,10 @@
 @import './galerie';
 @import './activitie_content';
 @import './coaching';
+@import './coachs';
+@import './entreprises';
+@import './plannings';
+@import './press_content';
 
 @font-face {
     font-family: 'Avenir Next bold';
@@ -1199,6 +1203,11 @@ footer {
             .decouvrir_btn {
                 width: 220px !important;
             }
+        }
+    }
+    .plannings-page {
+        li {
+            width: 100%;
         }
     }
 }

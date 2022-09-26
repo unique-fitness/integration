@@ -475,6 +475,281 @@
   src: url("./../fonts/Poppins-Regular.ttf");
 }
 
+.temoignages-section .carousel_promo .carousel-indicators [data-bs-target] {
+  background-color: #B9A974;
+}
+
+.temoignages-section .card_caroussel {
+  padding: 12px 24px 24px 24px;
+  max-width: 734px;
+  margin: auto;
+  background: #000000;
+  text-align: center;
+  padding: 25px;
+}
+
+.temoignages-section .card_caroussel p {
+  padding: 5px !important;
+  line-height: 22px;
+  max-width: 515px;
+  color: #939393;
+}
+
+.temoignages-section .avis-svg {
+  position: absolute;
+  right: 10vh;
+  bottom: 4vh;
+  z-index: 1;
+}
+
+.temoignages-section .title_temoignages h3 {
+  font-family: 'Avenir Next bold';
+  color: #B9A974;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.temoignages-section .title_temoignages p {
+  font-family: 'Avenir Next Regular';
+  margin-bottom: 11px;
+  color: #939393;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 0px;
+}
+
+.temoignages-section .person_img {
+  width: 46px;
+  height: 46px;
+  border-radius: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.temoignages-section button.carousel-control-next {
+  opacity: 1;
+  width: 8%;
+  height: 13%;
+  margin: auto;
+}
+
+.temoignages-section button.carousel-control-prev {
+  opacity: 1;
+  width: 8%;
+  height: 13%;
+  margin: auto;
+}
+
+.temoignages-section div#carouselExampleCaptions {
+  max-width: 854px;
+  padding-bottom: 50px;
+}
+
+.temoignages-section .carousel-indicators .active {
+  width: 50.4px !important;
+}
+
+@font-face {
+  font-family: 'Avenir Next bold';
+  src: url("./../fonts/AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: 'Avenir Next Regular';
+  src: url("./../fonts/AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url("./../fonts/Poppins-Regular.ttf");
+}
+
+.entreprise-section h5 {
+  max-width: 335px;
+}
+
+.entreprise-section h1 {
+  max-width: 837px;
+  line-height: 55px !important;
+  margin: auto;
+}
+
+.entreprise-second-section h1 {
+  color: white !important;
+  line-height: 55px !important;
+}
+
+.entreprise-second-section p {
+  color: #C8C8C8 !important;
+}
+
+.entreprise-second-section .background-img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+.entreprise-second-section .title_div p {
+  max-width: 670px;
+}
+
+.entreprise-second-section .first-progress-bar .sub-ligne {
+  background-color: white;
+}
+
+.entreprise-second-section .first-progress-bar .progress-value span {
+  color: white;
+}
+
+.contact-entrepris-section {
+  background-color: white;
+}
+
+.contact-entrepris-section img {
+  height: 482px;
+  width: 100% !important;
+  max-width: 100%;
+}
+
+.contact-entrepris-section .title_div h1 {
+  font-size: 40px;
+  line-height: 55px;
+  color: #252525;
+  text-shadow: none;
+}
+
+.contact-entrepris-section .title_div h1 span {
+  text-shadow: none;
+}
+
+.contact-entrepris-section .title_div p {
+  color: #252525;
+}
+
+.contact-entrepris-section input::-webkit-input-placeholder {
+  color: #ACACAC;
+}
+
+.contact-entrepris-section input:-ms-input-placeholder {
+  color: #ACACAC;
+}
+
+.contact-entrepris-section input::-ms-input-placeholder {
+  color: #ACACAC;
+}
+
+.contact-entrepris-section input::placeholder {
+  color: #ACACAC;
+}
+
+.contact-entrepris-section .decouvrir_btn:hover {
+  color: black;
+}
+
+@font-face {
+  font-family: 'Avenir Next bold';
+  src: url("./../fonts/AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: 'Avenir Next Regular';
+  src: url("./../fonts/AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url("./../fonts/Poppins-Regular.ttf");
+}
+
+.plannings-page .bg-btn-numbers {
+  max-width: 100%;
+  border: none;
+  color: #898989;
+}
+
+.plannings-page ul {
+  background-color: white;
+}
+
+.plannings-page a img {
+  -webkit-transition: .3s transform ease;
+  transition: .3s transform ease;
+  width: 100%;
+  height: 100%;
+  max-height: 671px;
+  padding-bottom: 20px;
+}
+
+.plannings-page a img:hover {
+  -webkit-transform: scale(1.1) !important;
+          transform: scale(1.1) !important;
+  -webkit-transition: .3s transform ease;
+  transition: .3s transform ease;
+}
+
+@font-face {
+  font-family: 'Avenir Next bold';
+  src: url("./../fonts/AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: 'Avenir Next Regular';
+  src: url("./../fonts/AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url("./../fonts/Poppins-Regular.ttf");
+}
+
+.related-articles .title_div h1 {
+  line-height: 55px;
+}
+
+.press_content .title_div h1 {
+  color: black;
+  text-shadow: none;
+  line-height: 55px;
+}
+
+.press_content .title_div p {
+  color: #444444;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.press_content .blog-dt_img {
+  width: 100%;
+  height: 100%;
+  max-width: 721px;
+  max-height: 421px;
+  border-radius: 0px;
+  margin-right: 29px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@font-face {
+  font-family: 'Avenir Next bold';
+  src: url("./../fonts/AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: 'Avenir Next Regular';
+  src: url("./../fonts/AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url("./../fonts/Poppins-Regular.ttf");
+}
+
 body {
   font-family: sans-serif;
   overflow-x: hidden;
@@ -1773,6 +2048,9 @@ footer .title_footer {
   }
   .reservez-visite .titls_bg .decouvrir_btn {
     width: 220px !important;
+  }
+  .plannings-page li {
+    width: 100%;
   }
 }
 

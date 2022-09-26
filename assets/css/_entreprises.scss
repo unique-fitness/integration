@@ -1,0 +1,74 @@
+@import "./variables_fonts";
+
+.entreprise-section {
+    h5 {
+        max-width: 335px;
+    }
+    h1 {
+        max-width: 837px;
+        line-height: 55px !important;
+        margin: auto;
+    }
+}
+
+.entreprise-second-section {
+    h1 {
+        color: white !important;
+        line-height: 55px !important;
+    }
+    p {
+        color: $p_color !important;
+    }
+    .background-img {
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            filter: brightness(0.3);
+            object-fit: cover;
+            z-index: -1;
+        }
+    }
+    .title_div {
+        p {
+            max-width: 670px;
+        }
+    }
+    .first-progress-bar {
+        .sub-ligne {
+            background-color: white;
+        }
+        .progress-value span {
+            color: white;
+        }
+    }
+}
+
+.contact-entrepris-section {
+    background-color: white;
+    img {
+        height: 482px;
+        width: 100% !important;
+        max-width: 100%;
+    }
+    .title_div {
+        h1 {
+            font-size: 40px;
+            line-height: 55px;
+            color: #252525;
+            text-shadow: none;
+            span {
+                text-shadow: none;
+            }
+        }
+        p {
+            color: #252525;
+        }
+    }
+    input::placeholder {
+        color: #ACACAC;
+    }
+    .decouvrir_btn:hover {
+        color: black;
+    }
+}
