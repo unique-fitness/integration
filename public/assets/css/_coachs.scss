@@ -1,0 +1,81 @@
+@import "./variables_fonts";
+
+.temoignages-section {
+       // TÉMOIGNAGES
+
+       .carousel_promo .carousel-indicators [data-bs-target] {
+        background-color: $second_color;
+      }
+    
+    .card_caroussel {
+        padding: 12px 24px 24px 24px;
+        max-width: 734px;
+        margin: auto;
+        background: $main_color;
+        text-align: center;
+        padding: 25px;
+        p {
+            padding: 5px !important;
+            line-height: 22px;
+            max-width: 515px;
+            color: #939393;
+        }
+    }
+
+    .avis-svg {
+        position: absolute;
+        right: 10vh;
+        bottom: 4vh;
+        z-index: 1;        
+    }
+    
+    .title_temoignages {
+        h3 {
+            font-family: 'Avenir Next bold';
+            color: $second_color;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        p {
+            font-family: 'Avenir Next Regular';
+            margin-bottom: 11px;
+            color: #939393;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 0px;
+        }
+    }
+    
+    .person_img {
+        width: 46px;
+        height: 46px;
+        border-radius: 30px;
+        object-fit: cover;
+    }
+    
+    
+    button.carousel-control-next {
+        opacity: 1;
+        width: 8%;
+        height: 13%;
+        margin: auto;
+      }
+    
+    button.carousel-control-prev {
+        opacity: 1;
+        width: 8%;
+        height: 13%;
+        margin: auto;
+      }
+    
+    div#carouselExampleCaptions {
+        max-width: 854px;
+        padding-bottom: 50px;
+      }
+    
+    .carousel-indicators .active {
+        width: 50.4px !important;
+    }
+}
+

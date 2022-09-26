@@ -1,0 +1,28 @@
+@import "./variables_fonts";
+
+
+.contact-section {
+    background-color: black;
+    img {
+        height: 662px;
+        width: 100%;
+        max-width: 446px;
+        object-fit: cover;
+    }
+    .title_div {
+        h1,h1 span {
+            font-size: 40px;
+            line-height: 55px;
+        }
+    }
+    input.form-control {
+        height: 48px;
+        background: #E7E7E7;
+        border-radius: 0;
+        margin-bottom: 25px;
+    }
+    .contact-btn {
+        max-width:  180px;
+        margin: initial;
+    }
+}
