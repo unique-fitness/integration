@@ -323,7 +323,7 @@
   src: url("./../fonts/Poppins-Regular.ttf");
 }
 
-.activitie-content-section h5 {
+.activitie-content-section h5.title {
   font-family: 'Avenir Next bold';
   text-transform: uppercase;
   padding-top: 10px;
@@ -352,23 +352,53 @@
   max-width: 100%;
   text-align: end;
   height: 45px;
+  -webkit-animation-name: progress-animation;
+          animation-name: progress-animation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-transition: .5s transform ease;
+  transition: .5s transform ease;
 }
 
 .activitie-content-section .first-progress-bar .progress-value h5 {
   font-size: 13px;
-  line-height: 22px;
   text-align: start;
   color: white;
-  position: absolute;
+  position: relative;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0;
+  padding: 14.5px;
 }
 
-.activitie-content-section .first-progress-bar .progress-value span {
+.activitie-content-section .first-progress-bar .progress-value span.value {
   font-size: 23px;
   line-height: 31px;
   position: relative;
-  bottom: 33px;
+  bottom: 77px;
   left: 24px;
   color: black;
+}
+
+@-webkit-keyframes progress-animation {
+  from {
+    width: 30;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes progress-animation {
+  from {
+    width: 30;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .activitie-content-section .first-progress-bar .sub-ligne {
@@ -503,6 +533,12 @@
   z-index: 1;
 }
 
+.temoignages-section .avis-svg-top {
+  position: absolute;
+  left: 10vh;
+  top: 4vh;
+}
+
 .temoignages-section .title_temoignages h3 {
   font-family: 'Avenir Next bold';
   color: #B9A974;
@@ -596,15 +632,15 @@
   z-index: -1;
 }
 
-.title_div p {
+.entreprise-second-section .title_div p {
   max-width: 670px;
 }
 
-.first-progress-bar .sub-ligne {
+.entreprise-second-section .first-progress-bar .sub-ligne {
   background-color: white;
 }
 
-.first-progress-bar .progress-value span {
+.entreprise-second-section .first-progress-bar .progress-value span.value {
   color: white;
 }
 
@@ -669,13 +705,27 @@
 }
 
 .plannings-page .bg-btn-numbers {
-  max-width: 100%;
   border: none;
   color: #898989;
+  max-width: 100%;
+  height: 100% !important;
+  border-radius: 0;
+  padding: 6px;
+}
+
+.plannings-page .bg-btn-numbers:hover {
+  border: none;
 }
 
 .plannings-page ul {
   background-color: white;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: auto;
+}
+
+.plannings-page ul li {
+  min-width: 260px;
 }
 
 .plannings-page a img {
@@ -684,7 +734,6 @@
   width: 100%;
   height: 100%;
   max-height: 671px;
-  max-width: 480px;
   padding-bottom: 20px;
 }
 
@@ -693,6 +742,13 @@
           transform: scale(1.1) !important;
   -webkit-transition: .3s transform ease;
   transition: .3s transform ease;
+}
+
+.plannings-page .right-flech {
+  position: absolute;
+  right: 0;
+  background: #B9A974;
+  padding: 4.5px 0px;
 }
 
 @font-face {
@@ -717,7 +773,6 @@
 .press_content .title_div h1 {
   color: black;
   text-shadow: none;
-  line-height: 55px;
 }
 
 .press_content .title_div p {
@@ -774,6 +829,12 @@ p {
 button:focus, input:focus, a:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+}
+
+button, a {
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+          appearance: none !important;
 }
 
 .banner img {
@@ -1134,33 +1195,21 @@ li.nav-item a.active:after {
   font-size: 40px;
   text-transform: uppercase;
   color: white;
-  text-shadow: 0px 4px 4px black;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.192);
 }
 
 .title_div h1 span {
   color: #B9A974;
-  text-shadow: 0px 4px 4px black;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.192);
   max-width: 370px;
   font-size: 64px;
 }
 
 .decouvrir_btn {
   font-family: 'Avenir Next Regular';
+  padding: 6px 30px 5px 30px;
   text-transform: uppercase;
-  width: 229px;
   font-size: 16px;
-  z-index: 1;
-  height: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .decouvrir_btn:hover, .contact-btn:hover {
@@ -1628,7 +1677,6 @@ button.carousel-control-prev:hover .icon-next-carossel, button.carousel-control-
 }
 
 .coaching-personnel .card .decouvrir_btn {
-  max-width: 200px;
   width: 100%;
 }
 
@@ -1776,6 +1824,12 @@ button.carousel-control-prev:hover .icon-next-carossel, button.carousel-control-
   bottom: 4vh;
 }
 
+.events-section .avis-svg-top {
+  position: absolute;
+  left: 10vh;
+  top: 4vh;
+}
+
 .events-section .title_temoignages h3 {
   font-family: 'Avenir Next bold';
   color: #B9A974;
@@ -1853,6 +1907,14 @@ button.carousel-control-prev:hover .icon-next-carossel, button.carousel-control-
 
 .unique-articles .card .title_div h1 {
   text-shadow: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.unique-articles .card .title_div p {
+  overflow: hidden;
+  height: 70px;
 }
 
 .unique-articles .card .title_div .bg-btn-numbers {
@@ -1895,7 +1957,7 @@ button.carousel-control-prev:hover .icon-next-carossel, button.carousel-control-
   font-family: 'Avenir Next bold';
   font-weight: 700;
   font-size: 32px;
-  line-height: 44px;
+  line-height: 50px;
   margin: 0;
 }
 
@@ -1937,10 +1999,6 @@ button.carousel-control-prev:hover .icon-next-carossel, button.carousel-control-
 
 .reservez-visite .titls_bg h1 span {
   font-size: 40px !important;
-}
-
-.reservez-visite .titls_bg .decouvrir_btn {
-  width: 245px !important;
 }
 
 /* ///////////////////////////Fin Reservez votre visite///////////////////////////////////// */
@@ -2044,9 +2102,6 @@ footer .title_footer {
   .reservez-visite .titls_bg .title_div {
     padding-top: 64px !important;
   }
-  .reservez-visite .titls_bg .decouvrir_btn {
-    width: 220px !important;
-  }
   .plannings-page li {
     width: 100%;
   }
@@ -2078,13 +2133,13 @@ footer .title_footer {
     right: 3vh !important;
   }
   .navbar-collapse.collapse_home {
-    background: linear-gradient(46deg, black, #000000ab);
+    background: black;
   }
   .navbar-collapse.collapse_home .navbar-nav, .navbar-collapse.collapse_home .btnContact {
     margin: 20px !important;
   }
   li.nav-item a {
-    font-size: 13px;
+    font-size: 18px !important;
   }
   .navbar div {
     -webkit-box-align: center !important;

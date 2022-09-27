@@ -4,10 +4,20 @@
                 time: 1000
             });
             AOS.init();
+            const cursor = document.querySelector('.custom-cursor');
+            document.addEventListener('mousemove', e =>{
+                cursor.setAttribute('style', 'top: '+(e.pageY - 10)+'px; left: '+(e.pageX - 10)+'px;');
+            })
+            document.addEventListener('click', () =>{
+                cursor.classList.add('expand-cursor');
+                setTimeout(() =>{
+                    cursor.classList.remove('expand-cursor');
+                }, 500)
+            })
             $(document).scroll(function () {
                 var $nav = $(".navbar-scrolled");
                 $nav.toggleClass('fixed-navbar', $(this).scrollTop() > $nav.height());
-              });            
+              });       
             $('.bg-btn-numbers').hover(function() {
                 $('.fixed-color-btn').attr("id","fixed-color-btn");
             }, function() {
@@ -73,15 +83,6 @@
             var imagPop = document.getElementById("lightgallery");
             lightGallery(imagPop);
             
-            const cursor = document.querySelector('.custom-cursor');
-            document.addEventListener('mousemove', e =>{
-                cursor.setAttribute('style', 'top: '+(e.pageY - 10)+'px; left: '+(e.pageX - 10)+'px;');
-            })
-            document.addEventListener('click', () =>{
-                cursor.classList.add('expand-cursor');
-                setTimeout(() =>{
-                    cursor.classList.remove('expand-cursor');
-                }, 500)
-            })
+           
         });
 

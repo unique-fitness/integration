@@ -53,6 +53,10 @@ button:focus,input:focus,a:focus {
     box-shadow:none !important;
 }
 
+button,a {
+    appearance: none !important;
+}
+
 .banner {
     img {
         height: 100%;
@@ -230,6 +234,8 @@ li.nav-item {
 }
 
 
+
+
 // Animation Navbar toggle 
 
 .nav-link {
@@ -348,28 +354,21 @@ li.nav-item {
         // line-height: 65px;
         text-transform: uppercase;
         color:  white;
-        text-shadow: 0px 4px 4px rgba(0 ,0 ,0 , 31%);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.192); 
         span {
             color: $second_color;
-            text-shadow: 0px 4px 4px rgba(0 ,0 ,0 , 55%);
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.192); 
             max-width: 370px;
             font-size: 64px;
         }
     }
 }
 
-
 .decouvrir_btn {
     font-family: 'Avenir Next Regular';
+    padding: 6px 30px 5px 30px;
     text-transform: uppercase;
-    width: 229px;
     font-size: 16px;
-    z-index: 1;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    justify-content: center;
 }
 
 .decouvrir_btn:hover,.contact-btn:hover {
@@ -381,6 +380,7 @@ li.nav-item {
 .titles {
     padding-bottom: 25px;
 }
+
 
 
 .linear-gradient-bg {
@@ -790,7 +790,6 @@ li.nav-item {
             }
         }
         .decouvrir_btn {
-            max-width: 200px;
             width: 100%;
         }
     }
@@ -925,6 +924,11 @@ li.nav-item {
             right: 10vh;
             bottom: 4vh;        
         }
+        .avis-svg-top {
+            position: absolute;
+            left: 10vh;
+            top: 4vh;        
+        }
         
         .title_temoignages {
             h3 {
@@ -1006,6 +1010,13 @@ li.nav-item {
             padding: 25 0 !important;
             h1 {
                 text-shadow: none;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            p {
+                overflow: hidden;
+                height: 70px;
             }
             .bg-btn-numbers {
                 background-color: transparent !important;
@@ -1041,7 +1052,7 @@ li.nav-item {
                 font-family: 'Avenir Next bold';
                 font-weight: 700;
                 font-size: 32px;
-                line-height: 44px;
+                line-height: 50px;
                 margin: 0;
             }
             span {
@@ -1081,9 +1092,6 @@ li.nav-item {
         }
         h1 span {
             font-size: 40px !important;
-        }
-        .decouvrir_btn {
-            width: 245px !important;
         }
     }
 }
@@ -1192,9 +1200,6 @@ footer {
             .title_div {
                 padding-top: 64px !important;
             }
-            .decouvrir_btn {
-                width: 220px !important;
-            }
         }
     }
     .plannings-page {
@@ -1232,13 +1237,13 @@ footer {
         right: 3vh !important;
     }
     .navbar-collapse.collapse_home{
-      background: linear-gradient(46deg, black, #000000ab);
+      background: black;
       .navbar-nav,.btnContact {
           margin: 20px !important;
       }
     }
     li.nav-item a {
-        font-size: 13px;
+        font-size: 18px !important;
     }
 
     .navbar div {
