@@ -317,14 +317,18 @@ li.nav-item {
   
 
   .titls_bg {
-    position: relative;
-    text-align: center;
-    top: 15vh;
-    right: 0;
-    left: 0;
-    padding: 59px;
-    z-index: 3;
-}
+        position: relative;
+        text-align: center;
+        bottom: 19vh;
+        z-index: 3;
+        // padding: 59px;
+        // position: relative;
+        // text-align: center;
+        // top: 15vh;
+        // right: 0;
+        // left: 0;
+        // padding: 59px;
+    }
 
 
 
@@ -1181,12 +1185,12 @@ footer {
     }
 }
 
-@media only screen and (max-width: 458px) {
-    .titls_bg {
-        top: 7vh;
-        padding: 35px;
-    }
-}
+// @media only screen and (max-width: 458px) {
+//     .titls_bg {
+//         top: 7vh;
+//         padding: 35px;
+//     }
+// }
 
 
 @media only screen and (max-width: 565px) {
@@ -1260,7 +1264,7 @@ footer {
             line-height: 1.8;
             font-size: 24px;
             span {
-                font-size: 46px;
+                font-size: 43px;
                 line-height: 1.1;
             }
         }
