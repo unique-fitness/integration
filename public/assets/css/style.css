@@ -308,6 +308,56 @@
   grid-row: span 4;
 }
 
+.galerie_section .container .videos {
+  width: 20%;
+  padding: 10px 0 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.galerie_section .container .videos video {
+  width: 95%;
+  height: 100px;
+  margin: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.galerie_section .container .videos video:nth-child(1) {
+  margin-top: 0;
+}
+
+.galerie_section .container .videos video:hover,
+.galerie_section .container .videos .active {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+  border: 3px solid blue;
+}
+
+.galerie_section .container .main-video {
+  width: 80%;
+  padding: 10px;
+}
+
+.galerie_section .container .main-video video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid blue;
+}
+
 @font-face {
   font-family: 'Avenir Next bold';
   src: url("./../fonts/AvenirNextLTPro-Bold.otf");
@@ -1160,10 +1210,7 @@ li.nav-item a.active:after {
 .titls_bg {
   position: relative;
   text-align: center;
-  top: 15vh;
-  right: 0;
-  left: 0;
-  padding: 59px;
+  bottom: 19vh;
   z-index: 3;
 }
 
@@ -2084,13 +2131,6 @@ footer .title_footer {
   }
 }
 
-@media only screen and (max-width: 458px) {
-  .titls_bg {
-    top: 7vh;
-    padding: 35px;
-  }
-}
-
 @media only screen and (max-width: 565px) {
   .reservez-visite .titls_bg {
     top: 0 !important;
@@ -2160,7 +2200,7 @@ footer .title_footer {
     font-size: 24px;
   }
   .reservez-visite .title_div h1 span, .carousel-inner .title_div h1 span {
-    font-size: 46px;
+    font-size: 43px;
     line-height: 1.1;
   }
   .rendez-corps .titls_bg .title_div {
