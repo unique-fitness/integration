@@ -1,0 +1,21 @@
+.Galerie Add videos Or Images
+
+
+Fin :
+________________
+.menu>a font-size 18px + full screen
+.Button Contact in menu
+.Buttons
+.Button Border Radious
+.Add Press befor Galerie And Delet A propos
+.Add Appearance attrb inside ALL Buttons
+.Progress Bar Color in Entrepris 
+.text text-shadow
+.Caroussel Navs
+.avis icon 
+.Articles Alignment
+.add Progress Bar Animation
+.Progress Bar
+.Plannings Add Carousel
+.Press Content
+
